@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonteCristo.Database", "Mon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonteCristo.Web", "MonteCristo.Web\MonteCristo.Web.csproj", "{40D4DC23-81DA-447C-9654-6FD5A1809911}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonteCristo.CacheManager", "MonteCristo.CacheManager\MonteCristo.CacheManager.csproj", "{0B454446-753C-4BDA-BFC1-80FD1EC0D294}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{40D4DC23-81DA-447C-9654-6FD5A1809911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D4DC23-81DA-447C-9654-6FD5A1809911}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D4DC23-81DA-447C-9654-6FD5A1809911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B454446-753C-4BDA-BFC1-80FD1EC0D294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B454446-753C-4BDA-BFC1-80FD1EC0D294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B454446-753C-4BDA-BFC1-80FD1EC0D294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B454446-753C-4BDA-BFC1-80FD1EC0D294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

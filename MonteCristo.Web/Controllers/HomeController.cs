@@ -13,8 +13,11 @@ namespace MonteCristo.Web.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        public HomeController(IUserService userService)
+        public HomeController(IUserService userService, CacheManager.ICacheManager cacheManager)
         {
+            cacheManager.Create(1,1);
+            var xx = cacheManager.Get<int>(1);
+            var xxxx = cacheManager.GetOrCreate<Application.Models.Framework.ApplicationUser>(2, () => userService.GetAsync("5c6f62b83d0b093ea8ddc96a").GetAwaiter().GetResult());
         }
         public IActionResult Index()
         {

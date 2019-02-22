@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MonteCristo.Application\MonteCristo.Application.csproj" />
+    <ProjectReference Include="..\MonteCristo.CacheManager\MonteCristo.CacheManager.csproj" />
     <ProjectReference Include="..\MonteCristo.Database\MonteCristo.Database.csproj" />
   </ItemGroup>
 

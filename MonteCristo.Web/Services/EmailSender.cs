@@ -45,7 +45,7 @@ namespace MonteCristo.Web.Services
                     // _logger.LogInformation($"SendEmailAsync {email} successfully");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // _logger.LogError("Error SendEmailAsync: " + ex);
             }

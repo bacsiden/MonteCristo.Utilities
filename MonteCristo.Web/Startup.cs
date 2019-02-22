@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AspNetCore.Identity.Mongo;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +18,7 @@ using MonteCristo.Database.Repositories;
 using MonteCristo.FileService;
 using MonteCristo.MongoDB.Framework.Models;
 using MonteCristo.Web.Services;
+using MonteCristo.CacheManager;
 
 namespace MonteCristo.Web
 {
@@ -77,6 +74,8 @@ namespace MonteCristo.Web
             MongoUrl url = new MongoUrl(mongoUrl);
             IMongoDatabase database = new MongoClient(url).GetDatabase(url.DatabaseName);
             services.AddSingleton(database);
+
+            services.AddTransient<ICacheManager, MemoryCacheManager>();
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IFileService, AmazoneS3>();
