@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MonteCristo.MongoDB.Framework</id>
+    <version>1.0.3</version>
+    <title>MonteCristo.MongoDB.Framework base on Mongo.Driver</title>
+    <authors>Monte Cristo</authors>
+    <owners>Monte Cristo</owners>
+    <license type="file">license.txt</license>
+    <projectUrl>https://google.com</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/2103e4b14d1567f383c1052b4385fffa</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MonteCristo.MongoDB.Framework base on Mongo.Driver</description>
+    <releaseNotes>For net core 2.1</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <dependencies>
+      <dependency id="MongoDB.Driver" version="2.7.2" />
+      <dependency id="AspNetCore.Identity.Mongo" version="3.1.5" />
+    </dependencies>
+    <tags>MonteCristo</tags>
+  </metadata>
+  <files>
+    <file src="MonteCristo.MongoDB.Framework\bin\Release\netcoreapp2.1\MonteCristo.MongoDB.Framework.dll" target="lib\netcoreapp2.1" />
+    <file src="license.txt" target="" />
+  </files>
+</package>

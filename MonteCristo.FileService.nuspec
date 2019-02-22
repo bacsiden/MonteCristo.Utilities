@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MonteCristo.FileService</id>
+    <version>1.0.5</version>
+    <title>MonteCristo.FileService</title>
+    <authors>Monte Cristo Simple Storage Service for net core</authors>
+    <owners>Monte Cristo</owners>
+    <license type="file">license.txt</license>
+    <projectUrl>https://google.com</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/2103e4b14d1567f383c1052b4385fffa</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Keys in AppSettings: AppSettings:awsAccessKeyId; AppSettings:awsSecretAccessKey; AppSettings:awsBucket; APSoutheast1</description>
+    <releaseNotes>For net core 2.1</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <dependencies>
+      <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="2.1.1"/>
+      <dependency id="AWSSDK.S3" version="3.3.31.19"/>
+    </dependencies>
+    <tags>MonteCristo</tags>
+  </metadata>
+  <files>
+    <file src="MonteCristo.FileService\bin\Release\netcoreapp2.1\MonteCristo.FileService.dll" target="lib\netcoreapp2.1" />
+    <file src="license.txt" target="" />
+  </files>
+</package>
