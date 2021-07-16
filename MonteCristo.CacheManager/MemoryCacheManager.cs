@@ -19,7 +19,7 @@ namespace MonteCristo.CacheManager
             if (_cache.TryGetValue<T>(key, out T value))
                 return value;
             else
-                return default(T);
+                return default;
         }
 
         public T GetOrCreate<T>(object key, Func<T> action) => _cache.GetOrCreate(key, m => action.Invoke());
